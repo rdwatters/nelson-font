@@ -1,6 +1,12 @@
 Nelson,
 
-Put the following inside `assets/scss/base/_fonts.scss1`, but change according to the weights you want to use. The `true` is whether or not to include `.woff2`. 
+### Step 1
+
+Add these fonts to `static/fonts/american-sans`.
+
+### Step 2
+
+Put the following code inside `assets/scss/base/_fonts.scss1`, but change according to the weights you want to use. The `true` is whether or not to include `.woff2`. 
 
 The `@fonts` includes both regular and italics.
 
@@ -12,6 +18,8 @@ $fontpath: "../fonts/${base-font-family}"; //note that $fontpath doesn't require
 @include fonts($fontfamily,$fontpath,100 200 300 400 500 700, true);
 
 ```
+
+### Step 3
 
 Then set the `$base-font-family` on line 43 of `assets/scss/abstracts/_variables.scss`:
 
